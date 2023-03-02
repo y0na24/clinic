@@ -1,0 +1,87 @@
+.services{
+  background: url('../../img/teeth.jpg') center/ cover no-repeat;
+
+
+
+
+&__container{
+  
+}
+
+
+  &__list {
+    padding-top: 510px;
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    gap: 17px;
+    margin: 0;
+    @media(max-width: 1430px) {
+        // grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr;
+        // place-items: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 200px;
+      }
+      @media(max-width: 604px){
+        padding: 50px;
+      }
+    }
+    
+    
+    &__item {
+      width: 333px;
+      height: 151px;
+      background-color: var(--accent-color);
+      transition: all 0.3s;
+      &:hover{
+        background-color: var(--green-color);
+      }
+      @media(max-width: 718px){
+        width: 270px;
+        height: 110px;
+      }
+
+      @media(max-width: 604px){
+        width: 230px;
+        height: 90px;
+      }
+    }
+    
+    &__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 50px;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 35px;
+      text-align: center;
+      color: #FFFFFF;
+      height: 100%;
+      @media(max-width: 718px){
+        font-size: 25px;
+        padding: 25px 25px;
+      }
+      
+    }
+    
+    &__btn{
+      text-align: center;
+    }
+    &__link{
+      color: var(--light-color);
+    }
+  }
+    
+    
+
+
+
+
+
+
+
+

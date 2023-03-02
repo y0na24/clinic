@@ -1,0 +1,68 @@
+.header {
+  background: var(--accent-color);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+    @media (max-width: 650px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__info {
+    display: flex;
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    @media (max-width: 650px) {
+      margin-bottom: 20px;
+    }
+    &-img {
+      margin-right: 15px;
+    }
+    &-text {
+      color: var(--light-color);
+      margin-right: 30px;
+    }
+  }
+  &__address {
+    display: flex;
+    align-items: center;
+    @media (max-width: 650px) {
+      justify-content: center;
+      margin-bottom: 20px;
+      padding-left: 5px;
+    }
+    
+    &-img {
+      margin-right: 15px;
+    }
+    &-text {
+      color: var(--light-color);
+      max-width: 280px;
+      @media (max-width: 650px) {
+        max-width: none;
+      }
+    }
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      margin-right: 15px;
+    }
+    &-input {
+      width: clamp(9.375rem, -3.533rem + 20.65vw, 21.25rem);
+      @media (max-width: 650px) {
+        width: 200px;
+      }
+      padding-right: 50px;
+    }
+  }
+}
